@@ -6,7 +6,7 @@
 /*   By: ksura <ksura@student.42wolfsburg.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/28 10:13:42 by ksura             #+#    #+#             */
-/*   Updated: 2022/06/07 15:33:21 by ksura            ###   ########.fr       */
+/*   Updated: 2022/06/08 18:33:29 by ksura            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,16 +42,13 @@ int	ft_atoi(const char *str)
 	{
 		n = n * 10 + *str - '0';
 		str++;
-		// if (n > 2147483647 && m == 1)
-		// 	return (-1);
-		// else if (n > 2147483648 && m == -1)
-		// 	return (0);
-	}		
+	}
 	return (n * m);
 }
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+
+// #include <stdio.h>
+// #include <stdlib.h>
+// #include <string.h>
 
 // int main()
 // {
