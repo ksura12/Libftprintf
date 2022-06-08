@@ -6,7 +6,7 @@
 /*   By: ksura <ksura@student.42wolfsburg.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/04 08:29:51 by ksura             #+#    #+#             */
-/*   Updated: 2022/05/13 13:28:21 by ksura            ###   ########.fr       */
+/*   Updated: 2022/06/07 14:06:38 by ksura            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ content: The content to create the node with.
 EXTERNAL FUNCTIONS
 malloc
 */
-t_list	*ft_lstnew(void *content)
+t_list	*ft_lstnew(int content)
 {
 	t_list	*new_list;
 

@@ -6,7 +6,7 @@
 /*   By: ksura <ksura@student.42wolfsburg.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/04 14:15:03 by ksura             #+#    #+#             */
-/*   Updated: 2022/05/13 13:28:04 by ksura            ###   ########.fr       */
+/*   Updated: 2022/06/07 14:16:30 by ksura            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ the content.
 EXTERNAL FUNCTIONS
 free
 */
-void	ft_lstdelone(t_list *lst, void (*del)(void *))
+void	ft_lstdelone(t_list *lst, void (*del)(int))
 {
 	if (lst && del)
 	{

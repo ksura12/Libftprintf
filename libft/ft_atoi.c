@@ -6,7 +6,7 @@
 /*   By: ksura <ksura@student.42wolfsburg.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/28 10:13:42 by ksura             #+#    #+#             */
-/*   Updated: 2022/05/13 13:27:12 by ksura            ###   ########.fr       */
+/*   Updated: 2022/06/07 15:33:21 by ksura            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,31 +42,31 @@ int	ft_atoi(const char *str)
 	{
 		n = n * 10 + *str - '0';
 		str++;
-		if (n > 2147483647 && m == 1)
-			return (-1);
-		else if (n > 2147483648 && m == -1)
-			return (0);
+		// if (n > 2147483647 && m == 1)
+		// 	return (-1);
+		// else if (n > 2147483648 && m == -1)
+		// 	return (0);
 	}		
 	return (n * m);
 }
-// #include <stdio.h>
-// #include <stdlib.h>
-// #include <string.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 // int main()
 // {
-//     int val;
-//     char strn1[] = "2147483647";
+//     long int val;
+//     char strn1[] = "2147483648";
 
 //     val = atoi(strn1);
 //     printf("String value = _%s_\n", strn1);
-//     printf("Integer value = %d\n", val);
-//     printf("Integer value = %d\n", ft_atoi(strn1));
-//     char strn2[] = "-2147483648";
-//     val = atoi(strn2);
+//     printf("atoi_Integer value = %ld\n", val);
+//     printf("ft_atoi Integer value = %d\n", ft_atoi(strn1));
+//     char strn2[] = "-2147483649";
+//     val = atol(strn2);
 //     printf("String value = %s\n", strn2);
-//     printf("Integer value = %d\n", val);
-// 	printf("Integer value = %d\n", ft_atoi(strn2));
+//     printf("atol_Integer value = %ld\n", val);
+// 	printf("ft_atoi_Integer value = %d\n", ft_atoi(strn2));
 
 //     return (0);
 // }

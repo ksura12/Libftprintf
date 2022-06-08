@@ -6,7 +6,7 @@
 #    By: ksura <ksura@student.42wolfsburg.de>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/27 14:12:06 by ksura             #+#    #+#              #
-#    Updated: 2022/05/13 18:08:27 by ksura            ###   ########.fr        #
+#    Updated: 2022/06/07 14:21:57 by ksura            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,7 +28,7 @@ OBJECTS_PREF := $(addprefix $(OBJDIR), $(OBJS))
 
 B_SRC :=	ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstadd_back.c\
 			ft_lstdelone.c ft_lstclear.c ft_lstlast.c ft_lstiter.c\
-			ft_lstmap.c
+			# ft_lstmap.c
 
 B_OBJS = ${B_SRC:.c=.o}
 B_OBJECTS_PREF := $(addprefix $(OBJDIR), $(B_OBJS))

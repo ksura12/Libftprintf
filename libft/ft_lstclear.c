@@ -6,7 +6,7 @@
 /*   By: ksura <ksura@student.42wolfsburg.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/04 14:26:09 by ksura             #+#    #+#             */
-/*   Updated: 2022/05/13 13:28:01 by ksura            ###   ########.fr       */
+/*   Updated: 2022/06/07 14:17:39 by ksura            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ the content of the node.
 EXTERNAL FUNCTIONS
 free
 */
-void	ft_lstclear(t_list **lst, void (*del)(void*))
+void	ft_lstclear(t_list **lst, void (*del)(int))
 {
 	t_list	*first;
 	t_list	*second;
