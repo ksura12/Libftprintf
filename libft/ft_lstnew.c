@@ -6,7 +6,7 @@
 /*   By: ksura <ksura@student.42wolfsburg.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/04 08:29:51 by ksura             #+#    #+#             */
-/*   Updated: 2022/06/07 14:06:38 by ksura            ###   ########.fr       */
+/*   Updated: 2022/06/10 16:46:40 by ksura            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,5 +36,6 @@ t_list	*ft_lstnew(int content)
 		return (NULL);
 	new_list->content = content;
 	new_list->next = NULL;
+	new_list->chunk = 0;
 	return (new_list);
 }

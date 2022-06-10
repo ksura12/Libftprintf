@@ -6,7 +6,7 @@
 /*   By: ksura <ksura@student.42wolfsburg.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/25 17:21:39 by ksura             #+#    #+#             */
-/*   Updated: 2022/06/10 11:37:14 by ksura            ###   ########.fr       */
+/*   Updated: 2022/06/10 16:45:21 by ksura            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@ typedef struct s_list
 {
 	int				content;
 	struct s_list	*next;
+	int 			chunk;
 }	t_list;
 
 // Part I
