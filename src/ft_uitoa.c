@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_uitoa.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ksura <ksura@student.42wolfsburg.de>       +#+  +:+       +#+        */
+/*   By: ksura@student.42wolfsburg.de <ksura@studen +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/11 11:24:25 by ksura             #+#    #+#             */
-/*   Updated: 2022/05/14 10:12:58 by ksura            ###   ########.fr       */
+/*   Updated: 2022/06/27 10:41:44 by ksura@student.42 ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,7 @@ static size_t	numtodig(unsigned int a)
 	i = 1;
 	if (a == 0)
 		return (i);
-	while (a > 9 || a < 0)
+	while (a > 9)
 	{
 		a = a / 10;
 		i++;
