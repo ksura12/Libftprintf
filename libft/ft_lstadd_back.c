@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ksura <ksura@student.42wolfsburg.de>       +#+  +:+       +#+        */
+/*   By: ksura@student.42wolfsburg.de <ksura@studen +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/04 12:59:22 by ksura             #+#    #+#             */
-/*   Updated: 2022/05/13 13:27:51 by ksura            ###   ########.fr       */
+/*   Updated: 2022/06/29 12:52:49 by ksura@student.42 ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,5 +34,15 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 	else
 	{
 		ft_lstlast(*lst)->next = new;
+	}
+}
+
+void ft_stackadd_back(t_stack **stk, t_stack *new)
+{
+	if (!*stk)
+		*stk = new;
+	else
+	{
+		ft_stacklast(*stk)->next = new;
 	}
 }

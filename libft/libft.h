@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ksura <ksura@student.42wolfsburg.de>       +#+  +:+       +#+        */
+/*   By: ksura@student.42wolfsburg.de <ksura@studen +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/25 17:21:39 by ksura             #+#    #+#             */
-/*   Updated: 2022/06/13 09:37:14 by ksura            ###   ########.fr       */
+/*   Updated: 2022/07/04 09:36:47 by ksura@student.42 ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,18 @@ typedef struct s_list
 	struct s_list	*next;
 	int 			chunk;
 }	t_list;
+
+typedef struct s_stack
+{
+	int	value;
+	int	index;
+	int	pindex;
+	int	pos;
+	int	tar_pos;
+	int	cost_a;
+	int	cost_b;
+	struct s_stack	*next;
+}	t_stack;
 
 // Part I
 int		ft_atoi(const char *str);
@@ -69,4 +81,11 @@ void	ft_lstdelone(t_list *lst, void (*del)(int));
 void	ft_lstclear(t_list **lst, void (*del)(int));
 void	ft_lstiter(t_list *lst, void (*f)(int));
 // t_list	*ft_lstmap(t_list *lst, void *(*f)(int), void (*del)(int));
+//  PushSwap functions
+t_stack	*ft_stacknew(int value);
+void	ft_stackadd_back(t_stack **stk, t_stack *new);
+void	ft_stackadd_front(t_stack **stk, t_stack *new);
+t_stack	*ft_stacklast(t_stack *stk);
+int		ft_stacksize(t_stack *stk);
+
 #endif

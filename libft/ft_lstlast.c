@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstlast.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ksura <ksura@student.42wolfsburg.de>       +#+  +:+       +#+        */
+/*   By: ksura@student.42wolfsburg.de <ksura@studen +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/04 13:53:06 by ksura             #+#    #+#             */
-/*   Updated: 2022/05/13 13:28:13 by ksura            ###   ########.fr       */
+/*   Updated: 2022/06/29 11:44:00 by ksura@student.42 ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,18 @@ t_list	*ft_lstlast(t_list *lst)
 	if (!lst)
 		return (NULL);
 	last = lst;
+	while (last->next != NULL)
+		last = last->next;
+	return (last);
+}
+
+t_stack *ft_stacklast(t_stack *stk)
+{
+	t_stack *last;
+
+	if (!stk)
+		return (NULL);
+	last = stk;
 	while (last->next != NULL)
 		last = last->next;
 	return (last);

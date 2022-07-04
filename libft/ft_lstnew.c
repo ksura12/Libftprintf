@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ksura <ksura@student.42wolfsburg.de>       +#+  +:+       +#+        */
+/*   By: ksura@student.42wolfsburg.de <ksura@studen +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/04 08:29:51 by ksura             #+#    #+#             */
-/*   Updated: 2022/06/10 16:46:40 by ksura            ###   ########.fr       */
+/*   Updated: 2022/06/29 11:24:41 by ksura@student.42 ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,5 +37,18 @@ t_list	*ft_lstnew(int content)
 	new_list->content = content;
 	new_list->next = NULL;
 	new_list->chunk = 0;
+	return (new_list);
+}
+
+t_stack *ft_stacknew(int value)
+{
+	t_stack *new_list;
+
+	new_list = (t_stack *)malloc(sizeof(t_stack));
+	if (!new_list)
+		return (NULL);
+	new_list->value = value;
+	new_list->next = NULL;
+	// new_list->chunk = 0;
 	return (new_list);
 }
