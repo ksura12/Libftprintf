@@ -6,7 +6,7 @@
 /*   By: ksura@student.42wolfsburg.de <ksura@studen +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/04 13:02:39 by ksura             #+#    #+#             */
-/*   Updated: 2022/06/29 12:33:27 by ksura@student.42 ###   ########.fr       */
+/*   Updated: 2022/07/05 10:25:20 by ksura@student.42 ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,10 +44,10 @@ int	ft_lstsize(t_list *lst)
 	}
 }
 
-int ft_stacksize(t_stack *stk)
+int	ft_stacksize(t_stack *stk)
 {
-	t_stack *temp;
-	int count;
+	t_stack	*temp;
+	int		count;
 
 	if (stk == NULL)
 		return (0);

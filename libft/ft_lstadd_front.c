@@ -6,7 +6,7 @@
 /*   By: ksura@student.42wolfsburg.de <ksura@studen +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/04 12:16:14 by ksura             #+#    #+#             */
-/*   Updated: 2022/06/29 11:41:39 by ksura@student.42 ###   ########.fr       */
+/*   Updated: 2022/07/05 10:25:32 by ksura@student.42 ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 	*lst = new;
 }
 
-void ft_stackadd_front(t_stack **stk, t_stack *new)
+void	ft_stackadd_front(t_stack **stk, t_stack *new)
 {
 	new->next = *stk;
 	*stk = new;

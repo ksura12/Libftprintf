@@ -6,7 +6,7 @@
 /*   By: ksura@student.42wolfsburg.de <ksura@studen +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/04 13:53:06 by ksura             #+#    #+#             */
-/*   Updated: 2022/06/29 11:44:00 by ksura@student.42 ###   ########.fr       */
+/*   Updated: 2022/07/05 10:25:02 by ksura@student.42 ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,9 +36,9 @@ t_list	*ft_lstlast(t_list *lst)
 	return (last);
 }
 
-t_stack *ft_stacklast(t_stack *stk)
+t_stack	*ft_stacklast(t_stack *stk)
 {
-	t_stack *last;
+	t_stack	*last;
 
 	if (!stk)
 		return (NULL);

@@ -6,7 +6,7 @@
 /*   By: ksura@student.42wolfsburg.de <ksura@studen +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/25 17:21:39 by ksura             #+#    #+#             */
-/*   Updated: 2022/07/04 09:36:47 by ksura@student.42 ###   ########.fr       */
+/*   Updated: 2022/07/05 10:24:26 by ksura@student.42 ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,18 +20,18 @@ typedef struct s_list
 {
 	int				content;
 	struct s_list	*next;
-	int 			chunk;
+	int				chunk;
 }	t_list;
 
 typedef struct s_stack
 {
-	int	value;
-	int	index;
-	int	pindex;
-	int	pos;
-	int	tar_pos;
-	int	cost_a;
-	int	cost_b;
+	int				value;
+	int				index;
+	int				pindex;
+	int				pos;
+	int				tar_pos;
+	int				cost_a;
+	int				cost_b;
 	struct s_stack	*next;
 }	t_stack;
 

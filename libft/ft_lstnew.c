@@ -6,7 +6,7 @@
 /*   By: ksura@student.42wolfsburg.de <ksura@studen +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/04 08:29:51 by ksura             #+#    #+#             */
-/*   Updated: 2022/06/29 11:24:41 by ksura@student.42 ###   ########.fr       */
+/*   Updated: 2022/07/05 11:01:09 by ksura@student.42 ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,15 +40,14 @@ t_list	*ft_lstnew(int content)
 	return (new_list);
 }
 
-t_stack *ft_stacknew(int value)
+t_stack	*ft_stacknew(int value)
 {
-	t_stack *new_list;
+	t_stack	*new_list;
 
-	new_list = (t_stack *)malloc(sizeof(t_stack));
+	new_list = (t_stack *)ft_calloc(1, sizeof(t_stack));
 	if (!new_list)
 		return (NULL);
 	new_list->value = value;
 	new_list->next = NULL;
-	// new_list->chunk = 0;
 	return (new_list);
 }
