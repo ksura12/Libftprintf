@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ksura@student.42wolfsburg.de <ksura@studen +#+  +:+       +#+        */
+/*   By: ksura <ksura@student.42wolfsburg.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/25 17:21:39 by ksura             #+#    #+#             */
-/*   Updated: 2022/07/05 10:24:26 by ksura@student.42 ###   ########.fr       */
+/*   Updated: 2022/07/18 11:06:11 by ksura            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,5 +87,7 @@ void	ft_stackadd_back(t_stack **stk, t_stack *new);
 void	ft_stackadd_front(t_stack **stk, t_stack *new);
 t_stack	*ft_stacklast(t_stack *stk);
 int		ft_stacksize(t_stack *stk);
+// adittional functions
+int	ft_strequ(char const *s1, char const *s2);
 
 #endif
