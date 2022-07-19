@@ -6,7 +6,7 @@
 #    By: ksura <ksura@student.42wolfsburg.de>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/27 14:12:06 by ksura             #+#    #+#              #
-#    Updated: 2022/07/19 16:12:18 by ksura            ###   ########.fr        #
+#    Updated: 2022/07/19 16:54:49 by ksura            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -39,17 +39,17 @@ $(OBJDIR)%.o : %.c libft.h
 	@$(CC) $(CFLAGS) -c $< -o $@
 
 $(NAME): $(OBJECTS_PREF)
-	ar rcs $(NAME) $(OBJECTS_PREF)
+	@ar rcs $(NAME) $(OBJECTS_PREF)
 
 .PHONY: all clean fclean re bonus norm
 
 all: $(NAME) bonus
 
 clean: 
-	rm -rf $(OBJDIR)
+	@rm -rf $(OBJDIR)
 
 fclean: clean
-	rm -f $(NAME)
+	@rm -f $(NAME)
 
 re: fclean all
 
