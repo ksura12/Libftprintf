@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_uitoa.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ksura@student.42wolfsburg.de <ksura@studen +#+  +:+       +#+        */
+/*   By: ksura <ksura@student.42wolfsburg.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/11 11:24:25 by ksura             #+#    #+#             */
-/*   Updated: 2022/06/27 10:41:44 by ksura@student.42 ###   ########.fr       */
+/*   Updated: 2022/07/19 16:27:41 by ksura            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../header/libftprintf.h"
+#include "libft.h"
 /*
 DESCRIPTION
 Allocates (with malloc(3)) and returns a string

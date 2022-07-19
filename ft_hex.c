@@ -6,11 +6,11 @@
 /*   By: ksura <ksura@student.42wolfsburg.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/11 11:24:25 by ksura             #+#    #+#             */
-/*   Updated: 2022/05/15 09:26:42 by ksura            ###   ########.fr       */
+/*   Updated: 2022/07/19 16:28:38 by ksura            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../header/libftprintf.h"
+#include "libft.h"
 
 /*
 DESCRIPTION

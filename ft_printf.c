@@ -6,11 +6,11 @@
 /*   By: ksura <ksura@student.42wolfsburg.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/09 09:44:32 by ksura             #+#    #+#             */
-/*   Updated: 2022/05/15 09:46:37 by ksura            ###   ########.fr       */
+/*   Updated: 2022/07/19 16:28:20 by ksura            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../header/libftprintf.h"
+#include "libft.h"
 /*
 DESCRIPTION
 The printf utility formats and prints its arguments, after the first,

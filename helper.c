@@ -6,11 +6,11 @@
 /*   By: ksura <ksura@student.42wolfsburg.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/13 12:41:27 by ksura             #+#    #+#             */
-/*   Updated: 2022/05/15 09:30:07 by ksura            ###   ########.fr       */
+/*   Updated: 2022/07/19 16:27:59 by ksura            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../header/libftprintf.h"
+#include "libft.h"
 
 int	print_str(va_list	list);
 int	print_char(va_list	list);
